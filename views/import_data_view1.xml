@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+
+        <!-- Tree View -->
+        <record id="view_import_demo_tree" model="ir.ui.view">
+            <field name="name">custom.import.demo.tree</field>
+            <field name="model">custom.import.demo</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="beneficiary_name"/>
+                    <field name="beneficiary_bank"/>
+                    <field name="beneficiary_branch"/>
+                    <field name="beneficiary_acc_no"/>
+                    <field name="kotak_non_kotak"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="view_import_demo_form" model="ir.ui.view">
+            <field name="name">custom.import.demo.form</field>
+            <field name="model">custom.import.demo</field>
+            <field name="arch" type="xml">
+                <form string="Import Data">
+                    <group>
+                        <field name="beneficiary_name"/>
+                        <field name="beneficiary_branch"/>
+                        <field name="beneficiary_acc_no"/>
+                        <field name="kotak_non_kotak"/>
+                    </group>
+
+                    <group>
+
+                        <!-- Add all other fields here -->
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_import_demo" model="ir.actions.act_window">
+            <field name="name">Import Data</field>
+            <field name="res_model">custom.import.demo</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu Item -->
+
+        <menuitem id="menu_import_data" name="Import Data" action="action_import_demo"
+                  parent="bank_detail_menu" sequence="2"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_custom_import_demo,custom_import_demo,model_custom_import_demo,,1,1,1,1
+access_bank_detail,bank_detail,model_bank_detail,,1,1,1,1
+access_bank_detail_line,bank_detail_line,model_bank_detail_line,,1,1,1,1
