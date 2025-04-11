@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Sequences for sale.order -->
+        <record id="bank_detail_seq_order" model="ir.sequence">
+            <field name="name">BankDetail</field>
+            <field name="code">bank.detail</field>
+            <field name="prefix">BANK</field>
+            <field name="padding">3</field>
+
+        </record>
+    </data>
+</odoo>
